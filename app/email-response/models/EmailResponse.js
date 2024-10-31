@@ -12,8 +12,8 @@ const emailResponseSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-const emailResponse =
+const EmailResponse =
   mongoose.models.EmailResponse ||
   mongoose.model("EmailResponse", emailResponseSchema);
 
-export default emailResponse;
+export default EmailResponse;
